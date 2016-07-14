@@ -1,0 +1,28 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">WebApp Without Persistence</h1>
+    <div class="buttons">
+    	<button class="button" ng-click='append()'>+</button>
+  	</div>
+  </ion-header-bar>
+	<ion-content>
+		<table style="width: 100%">
+			<thead style="background: #ccc">
+				<tr class="row">
+					<td class="col col-20">Matrícula</td>
+					<td class="col col-50">Nome</td>
+					<td class="col">CPF</td>
+					<td class="col">X</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="row" ng-repeat="student in students">
+					<td class="col col-20">{{student.code}}</td>
+					<td class="col col-50">{{student.name}}</td>
+					<td class="col">{{student.cpf}}</td>
+					<td class="col"><button ng-click="delete(student.code)">excluir</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</ion-content>
+</ion-pane>

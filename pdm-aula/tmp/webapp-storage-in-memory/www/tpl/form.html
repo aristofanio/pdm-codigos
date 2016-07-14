@@ -1,0 +1,29 @@
+<ion-pane>
+  <ion-header-bar class="bar-stable">
+    <h1 class="title">Formulário de Cadastro</h1>
+  </ion-header-bar>
+	<ion-content>
+		<div class="list">
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Nome do Aluno</span>
+		    <input type="text" ng-model="student.name" placeholder="seu nome completo">
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">CPF</span>
+		    <input type="number" ng-model="student.cpf" placeholder="apenas números" >
+		  </label>
+		  <label class="item item-input item-stacked-label">
+		    <span class="input-label">Matrícula</span>
+		    <input type="number" ng-model="student.code" placeholder="apenas números">
+		  </label>
+		  <div class="row">
+		  	<div class="col">
+		  		<button class="button button-block button-assertive">cancelar</button>
+		  	</div>
+		  	<div class="col">
+		  		<button class="button button-block button-positive" ng-click="save()">salvar</button>
+		  	</div>
+		  </div>
+		</div>
+	</ion-content>
+</ion-pane>

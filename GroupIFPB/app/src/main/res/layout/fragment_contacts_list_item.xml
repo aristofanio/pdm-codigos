@@ -2,17 +2,18 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
+              android:padding="10dp"
               android:weightSum="1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="An"
-        android:id="@+id/textView"
+        android:id="@+id/tvsymbol"
         android:textStyle="bold"
         android:textSize="30sp"
         android:padding="5dp"
-        android:background="@drawable/circtxt"/>
+        android:background="@drawable/circtxt_blue"/>
 
     <LinearLayout
         android:orientation="vertical"
@@ -26,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Text"
-            android:id="@+id/textView2"
+            android:id="@+id/tvtitle"
             android:textSize="14sp"
             android:textStyle="bold"/>
 
@@ -34,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="New Text"
-            android:id="@+id/textView3"
+            android:id="@+id/tvmessage"
             android:textSize="12sp"
             android:textStyle="italic"/>
     </LinearLayout>

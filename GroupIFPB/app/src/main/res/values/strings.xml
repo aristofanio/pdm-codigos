@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Chat</string>
+    <string name="user_display">Nome do Usuário</string>
+</resources>

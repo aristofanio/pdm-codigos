@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="ag.chat.ui.ContactsList">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="ag.chat.ui.ContactsList">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:background="@color/colorPrimary"
+        android:gravity="center"
         android:orientation="vertical">
 
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:src="@drawable/circular"
             android:background="@drawable/fern"
+            android:src="@drawable/circular"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/user_display"
-            android:paddingTop="20dp"
             android:paddingBottom="20dp"
+            android:paddingTop="20dp"
+            android:text="@string/user_display"
             android:textColor="@android:color/primary_text_dark"
             />
 
@@ -35,7 +35,6 @@
         android:id="@+id/listView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
-
 
 
 </LinearLayout>

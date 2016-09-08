@@ -45,8 +45,7 @@ public class ContactRepository {
                     .newSingleThreadExecutor()
                     .submit(callable);
             return future.get();//bloqueado
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         //
@@ -73,7 +72,8 @@ public class ContactRepository {
                     GsonBuilder builder = new GsonBuilder();
                     Gson gson = builder.create();
                     List<Contact> result = gson.fromJson(json,
-                            new TypeToken<List<Contact>>() {}.getType());
+                            new TypeToken<List<Contact>>() {
+                            }.getType());
                     return result.get(position);//return
                 } catch (IOException e) {
                     e.printStackTrace();
@@ -85,8 +85,7 @@ public class ContactRepository {
         try {
             Future<Contact> future = Executors.newSingleThreadExecutor().submit(callable);
             return future.get();//bloqueado
-        }
-        catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
         //

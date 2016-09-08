@@ -12,10 +12,10 @@ import android.widget.TextView;
 import ag.chat.R;
 import ag.chat.model.Contact;
 
+
 public class ContactsList extends AppCompatActivity {
 
-
-    private void initListView(){
+    private void initListView() {
         //
         ListAdapter adapter = new ContactsListAdapter() {
             @Override
@@ -23,7 +23,7 @@ public class ContactsList extends AppCompatActivity {
                 //
                 Contact contact = (Contact) getItem(position);
                 //
-                View view  = getLayoutInflater().inflate(R.layout.fragment_contacts_list_item, null);
+                View view = getLayoutInflater().inflate(R.layout.fragment_contacts_list_item, null);
                 TextView symbol = (TextView) view.findViewById(R.id.tvsymbol);
                 symbol.setText(contact.getName().substring(0, 2));
                 symbol.setBackgroundResource(position % 2 == 0 ? R.drawable.circtxt_blue : R.drawable.circtxt_red);

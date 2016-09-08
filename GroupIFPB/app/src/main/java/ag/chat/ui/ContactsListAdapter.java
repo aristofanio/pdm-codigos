@@ -2,10 +2,6 @@ package ag.chat.ui;
 
 import android.widget.BaseAdapter;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import ag.chat.model.Contact;
 import ag.chat.model.ContactRepository;
 
 /**
